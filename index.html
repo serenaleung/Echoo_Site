@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Echoo Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/styles.css?v1.0" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      $(function(){
+      var shrinkHeader = 300;
+      $(window).scroll(function() {
+        var scroll = getCurrentScroll();
+          if ( scroll >= shrinkHeader ) {
+               $('.navbar-default').addClass('shrink');
+            }
+            else {
+                $('.navbar-default').removeClass('shrink');
+            }
+      });
+      function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+        }
+      });
+    </script>
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">
+             <img src="public/img/logo.png" class="d-inline-block align-top logo" alt="">
+            </a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#product">Product</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <section id="home" class="headerImg">
+        <div class="container text-center">
+          <h2 class="slogan">Empowers Learning</h2>
+          <button type="button" name="button" class="btn btn-primary button">LEARN MORE</button>
+        </div>
+      </section>
+
+      <section id="product">
+        <div class="container">
+          <div class="text-center">
+            <h2>Product</h2>
+            <h3 class="productBlurb">Your learning journey starts here.</h3>
+            <div class="productCircle"></div>
+          </div>
+
+          <div class="productRow row">
+            <div class="col-md-5">
+              <h3>Plan</h3>
+              <p>Set your goal. Decide on what you want to learn in your areas of development and interest.</p>
+            </div>
+            <div class="col-md-2 verticalLine">
+
+            </div>
+            <div class="col-md-5">
+              <div class="bgFill">
+              </div>
+            </div>
+          </div>
+
+          <div class="productRow row">
+            <div class="productCircle"></div>
+            <div class="col-md-5">
+              <div class="bgFill">
+              </div>
+            </div>
+            <div class="col-md-2 verticalLine">
+            </div>
+            <div class="col-md-5">
+              <h3>Connect</h3>
+              <p>Get everything you need from tools to experts to help you start and commit to your learning goals.</p>
+            </div>
+          </div>
+
+          <div class="productRow row">
+            <div class="productCircle"></div>
+            <div class="col-md-5">
+              <h3>Execute</h3>
+              <p>Begin your personalized learning adventure with the best materials, experiences, and anything else you need to help you succeed.</p>
+            </div>
+            <div class="col-md-2 verticalLine">
+            </div>
+            <div class="col-md-5">
+              <div class="bgFill">
+              </div>
+            </div>
+          </div>
+
+          <div class="productRow row">
+            <div class="productCircle"></div>
+            <div class="col-md-5">
+              <div class="bgFill">
+              </div>
+            </div>
+            <div class="col-md-2 verticalLine">
+            </div>
+            <div class="col-md-5">
+              <h3>Monitor</h3>
+              <p>Ensure your success with measureable tools. Continue discussions and grow your support network with individuals alike.</p>
+            </div>
+          </div>
+
+          <div class="productRow row text-center">
+            <div class="productCircle"></div>
+            <h3 class="productBlurb">Success!</h3>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="team" class="text-center">
+        <div class="container">
+          <h2 class="text-center">Meet the Team</h2>
+          <p class="teamBlurb">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          </p>
+
+          <div class="row center-block">
+            <div class="col-md-2">
+              <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
+              <h4>Qiang</h4>
+              <h5>CEO</h5>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+              <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
+              <h4>Qiang</h4>
+              <h5>CEO</h5>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+              <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
+              <h4>Qiang</h4>
+              <h5>CEO</h5>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+              <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
+              <h4>Qiang</h4>
+              <h5>CEO</h5>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+              <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
+              <h4>Qiang</h4>
+              <h5>CEO</h5>
+            </div>
+
+            <div class="col-md-3">
+              <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
+              <h4>Qiang</h4>
+              <h5>CEO</h5>
+            </div>
+
+            <div class="col-md-3">
+              <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
+              <h4>Qiang</h4>
+              <h5>CEO</h5>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2 class="text-center">Contact</h2>
+          <div class="col-md-4">
+            <form>
+             <div class="form-group">
+               <label for="exampleInputEmail1">Email address</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+             </div>
+             <div class="form-group">
+               <label for="exampleInputPassword1">Password</label>
+               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+             </div>
+             <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-8">
+            <div class="bgFill">
+              something
+            </div>
+          </div>
+        </div>
+      </section>
+
+  </body>
+</html>
