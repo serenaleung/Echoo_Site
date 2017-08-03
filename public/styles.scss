@@ -13,10 +13,6 @@ body {
     line-height: 20px;
 }
 
-// .navbar-collapse {
-//   background-color: #333;
-// }
-
 .navbar-default .navbar-nav>li>a {
     margin-top: 1.5rem;
     // color: rgb(207, 207, 207);
@@ -35,6 +31,51 @@ body {
   color: white;
   border-bottom: 1px solid white;
   background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-default {
+    background-color: #333;
+    border: 0;
+  }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    margin-top: 0rem;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+  }
+
+  .collapsing, .in {background-color: #333;}
+  .collapsing ul li a, .in ul li a {color: white!important; margin:0}
+  .collapsing ul li a:hover, .in ul li a:hover {color: #f1f1f1!important;}
+
+  .navbar-brand img {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .navbar-brand img {
+    -webkit-transform: scale(0.65);
+    -ms-transform: scale(0.65);
+    transform: scale(0.65) translate(-6.7rem,-2.1rem);
+  }
+
+  // -------------- Product --------------
+
+    .productCircle {
+      display: none;
+    }
+
+    .verticalLine {
+      display: none;
+    }
+
 }
 
 @media(min-width:768px) {
@@ -75,11 +116,17 @@ body {
     }
 }
 
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 50px;
+}
 
 h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 40px;
+  padding-bottom: 3rem;
 }
 
 p {
@@ -93,6 +140,7 @@ a {
 
 .slogan {
   font: 'Lato';
+  text-shadow: 0 0 2rem #383838;
 }
 
 .navbar {
@@ -121,8 +169,12 @@ a {
   border: white;
 }
 
-.productBlurb {
+.productStart {
   padding-bottom: 3rem;
+}
+
+.productBlurb {
+  line-height: 1.8rem;
 }
 
 .productCircle {
@@ -134,13 +186,12 @@ a {
   left:10%;
   position:relative;
   vertical-align: middle;
-  // top: 2px;
   left: calc(50% - 5px);
 }
 
 .verticalLine {
     margin-top: 2rem;
-    height: 16rem;
+    height: 18rem;
 	  background: linear-gradient(to right,
 	                              transparent 0%,
 	                              transparent calc(50% - 0.5px),
@@ -156,12 +207,21 @@ a {
 
 .teamBlurb {
   padding-bottom: 3rem;
+  line-height: 2rem;
 }
 
 .teamCircle {
   border-radius: 50%;
   width: 18rem;
   height: 18rem;
+}
+
+.teamRole {
+  line-height: 2rem;
+}
+
+textarea {
+  resize: none;
 }
 
 #home {
