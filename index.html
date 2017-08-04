@@ -1,31 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">
     <title>Echoo Lab</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="public/styles.css?v1.0" media="screen" />
+    <script src="public/header.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
-    <script type="text/javascript">
-      $(function(){
-      var shrinkHeader = 300;
-      $(window).scroll(function() {
-        var scroll = getCurrentScroll();
-          if ( scroll >= shrinkHeader ) {
-               $('.navbar-default').addClass('shrink');
-            }
-            else {
-                $('.navbar-default').removeClass('shrink');
-            }
-      });
-      function getCurrentScroll() {
-        return window.pageYOffset || document.documentElement.scrollTop;
-        }
-      });
-    </script>
-
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -56,7 +40,7 @@
       <section id="home" class="headerImg">
         <div class="container text-center">
           <h1 class="slogan">Empowers Learning</h1>
-          <button type="button" name="button" class="btn btn-primary button">LEARN MORE</button>
+          <a class="btn btn-primary button" role="button" href="#product">Learn More</a>
         </div>
       </section>
 
@@ -76,19 +60,19 @@
             <div class="col-md-2 verticalLine">
 
             </div>
-            <div class="col-md-5">
-              <img src="public/img/plan.png" alt="">
+            <div class="col-md-5 center-block">
+              <img class="center-block" src="public/img/plan.png" alt="">
             </div>
           </div>
 
           <div class="productRow row">
             <div class="productCircle"></div>
-            <div class="col-md-5">
-              <img class="productConnect" src="public/img/support.png" alt="">
+            <div class="col-xs-12 col-md-5">
+              <img class="productConnect center-block" src="public/img/support.png" alt="">
             </div>
-            <div class="col-md-2 verticalLine">
+            <div class="col-xs-12 col-md-2 verticalLine">
             </div>
-            <div class="col-md-5">
+            <div class="col-xs-12 col-md-5">
               <h3>Connect</h3>
               <p class="productBlurb">Get everything you need from tools to experts to help you start and commit to your learning goals.</p>
             </div>
@@ -96,25 +80,25 @@
 
           <div class="productRow row">
             <div class="productCircle"></div>
-            <div class="col-md-5">
+            <div class="col-xs-12 col-md-5">
               <h3>Execute</h3>
               <p class="productBlurb">Begin your personalized learning adventure with the best materials, experiences, and anything else you need to help you succeed.</p>
             </div>
-            <div class="col-md-2 verticalLine">
+            <div class="col-xs-12 col-md-2 verticalLine">
             </div>
-            <div class="col-md-5">
-              <img class="productConnect" src="public/img/feedback.png" alt="">
+            <div class="col-xs-12 col-md-5">
+              <img class="productConnect center-block" src="public/img/feedback.png" alt="">
             </div>
           </div>
 
           <div class="productRow row">
             <div class="productCircle"></div>
-            <div class="col-md-5">
-              <img src="public/img/track.png" alt="">
+            <div class="col-xs-12 col-md-5">
+              <img class="center-block" src="public/img/track.png" alt="">
             </div>
-            <div class="col-md-2 verticalLine">
+            <div class="col-xs-12 col-md-2 verticalLine">
             </div>
-            <div class="col-md-5">
+            <div class="col-xs-12 col-md-5">
               <h3>Monitor</h3>
               <p class="productBlurb">Ensure your success with measureable tools. Continue discussions and grow your support network with individuals alike.</p>
             </div>
@@ -130,57 +114,60 @@
 
       <section id="team" class="text-center">
         <div class="container">
-          <h2 class="text-center">Meet the Team</h2>
-          <p class="teamBlurb">
-            In Echoo we are a group of dreamers, doers and fun lovers, who are committed to make everyone a better learner. Our mission is: Using smart time management, personalized community support, self-discovery insights, and simple goal management, Echoo is designed to free everyone to be at their very best in learning.
-          </p>
+          <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <h2>Meet the Team</h2>
+            <p class="teamBlurb">
+              In Echoo we are a group of dreamers, doers and fun lovers, who are committed to make everyone a better learner. Our mission is: Using smart time management, personalized community support, self-discovery insights, and simple goal management, Echoo is designed to free everyone to be at their very best in learning.
+            </p>
+          </div>
 
           <div class="row center-block">
-            <div class="col-md-2">
+            <div class="col-sm-12 col-md-2">
               <img src="public/img/team/Echoo_HeadShot_Qiang.jpg" class="teamCircle" alt=""></img>
-              <h4>Qiang</h4>
+              <h4 class="teamName">Qiang</h4>
               <h5 class="teamRole">CEO &amp; Big Boss</h5>
             </div>
             <div class="col-md-1">
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-12 col-md-2">
               <img src="public/img/team/Echoo_HeadShot_Fei.jpg" class="teamCircle" alt=""></img>
-              <h4>Fei Peng</h4>
+              <h4 class="teamName">Fei Peng</h4>
               <h5 class="teamRole">Vice President of Sales &amp; Chief Game Officer</h5>
             </div>
             <div class="col-md-1">
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-12 col-md-2">
               <img src="public/img/team/Echoo_HeadShot_Ted.jpg" class="teamCircle" alt=""></img>
-              <h4>Ted</h4>
+              <h4 class="teamName">Ted</h4>
               <h5 class="teamRole">Sr. Software Developer &amp; Chief Timbits Officer</h5>
             </div>
             <div class="col-md-1">
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-12 col-md-2">
               <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
-              <h4>Bo Sun</h4>
+              <h4 class="teamName">Bo Sun</h4>
               <h5 class="teamRole">Software Developer &amp; Chief Tea Officer</h5>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <div class="col-sm-12 col-md-3">
               <img src="public/img/team/Echoo_HeadShot_Jeff.jpg" class="teamCircle" alt=""></img>
-              <h4>Jeff Huang</h4>
+              <h4 class="teamName">Jeff Huang</h4>
               <h5 class="teamRole">Software Developer &amp; Chief Lunch Officer</h5>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-sm-12 col-md-3">
               <img src="public/img/team/Echoo_HeadShot_Serena.jpg" class="teamCircle" alt=""></img>
-              <h4>Serena Leung</h4>
+              <h4 class="teamName">Serena Leung</h4>
               <h5 class="teamRole">Software Developer and Interaction Designer &amp; Chief Icecream Officer</h5>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-sm-12 col-md-3">
               <img src="public/img/team/Echoo_HeadShot_Elaine.jpg" class="teamCircle" alt=""></img>
-              <h4>Elaine Chang</h4>
+              <h4 class="teamName">Elaine Chang</h4>
               <h5 class="teamRole">Marketing Manager &amp; Chief Food Officer</h5>
             </div>
             <div class="col-md-1"></div>
@@ -210,12 +197,12 @@
                <label for="Message">Message</label>
                <textarea rows="4" type="message" class="form-control" id="Message" placeholder="Message"></textarea>
              </div>
-             <button type="submit" class="btn btn-default">Submit</button>
+             <button type="submit" class="btn btn-default contactSubmit">Submit</button>
             </form>
           </div>
-          <div class="col-md-8">
-            <div class="contactMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2607.0540875457473!2d-123.0084196!3d49.1995335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676094af93dd1%3A0x28d26e63fba6a7d5!2s4300+N+Fraser+Way+%23157%2C+Burnaby%2C+BC+V5J+5J8!5e0!3m2!1sen!2sca!4v1501708109372" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="col-xs-12 col-md-8">
+            <div>
+              <iframe class="contactMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2607.0540875457473!2d-123.0084196!3d49.1995335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676094af93dd1%3A0x28d26e63fba6a7d5!2s4300+N+Fraser+Way+%23157%2C+Burnaby%2C+BC+V5J+5J8!5e0!3m2!1sen!2sca!4v1501708109372" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
