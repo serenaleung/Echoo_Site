@@ -232,6 +232,7 @@ a {
 
 .verticalLine {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   height: 18rem;
   background: linear-gradient(to right, transparent 0%, transparent calc(50% - 0.5px), black calc(50% - 0.8px), black calc(50% + 0.8px), transparent calc(50% + 0.5px), transparent 100%); }
 
