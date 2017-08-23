@@ -26,7 +26,7 @@ body {
   border-bottom: 1px solid white;
   background-color: transparent; }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991.99px) {
   body {
     margin: -1.5rem !important; }
 
@@ -259,9 +259,11 @@ textarea {
 #home {
   color: white;
   padding: 45vh 0;
-  background: url(../public/img/header.jpg);
-  background-size: cover;
-  background-attachment: fixed; }
+  background-image: url(../public/img/header.jpg);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-size: cover !important; }
 
 #product {
   padding: 10rem; }

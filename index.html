@@ -10,6 +10,20 @@
     <link rel="stylesheet" type="text/css" href="public/styles.css?v1.0" media="screen" />
     <script src="public/header.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      function iOS() {
+        var iDevices = [ 'iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod'];
+
+        if (!!navigator.platform) {
+          while (iDevices.length) {
+            if (navigator.platform === iDevices.pop()){ return true; }
+          }
+        }
+
+        return false;
+        }
+    </script>
+
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -118,7 +132,7 @@
 
             <h2>Meet the Team</h2>
             <p class="teamBlurb">
-              In Echoo we are a group of dreamers, doers and fun lovers, who are committed to make everyone a better learner. Our mission is: Using smart time management, personalized community support, self-discovery insights, and simple goal management, Echoo is designed to free everyone to be at their very best in learning.
+              We are a team of dreamers and doers. We are committed to making everyone a better learner through Echoo – an interactive tool to connect learners with resources to achieve any learning goal.  At Echoo, we are lifelong learners. We care about the betterment and quality of education for our community.
             </p>
           </div>
 
@@ -126,13 +140,13 @@
             <div class="col-sm-12 col-md-2">
               <img src="public/img/team/Echoo_HeadShot_Qiang.jpg" class="teamCircle" alt=""></img>
               <h4 class="teamName">Qiang</h4>
-              <h5 class="teamRole">CEO &amp; Big Boss</h5>
+              <h5 class="teamRole">CEO &amp; Chief Fruits Officer</h5>
             </div>
             <div class="col-md-1">
             </div>
             <div class="col-sm-12 col-md-2">
               <img src="public/img/team/Echoo_HeadShot_Fei.jpg" class="teamCircle" alt=""></img>
-              <h4 class="teamName">Fei Peng</h4>
+              <h4 class="teamName">Fei</h4>
               <h5 class="teamRole">Vice President of Sales &amp; Chief Game Officer</h5>
             </div>
             <div class="col-md-1">
@@ -146,7 +160,7 @@
             </div>
             <div class="col-sm-12 col-md-2">
               <img src="public/img/team/Echoo_HeadShot_Bo.jpg" class="teamCircle" alt=""></img>
-              <h4 class="teamName">Bo Sun</h4>
+              <h4 class="teamName">Bo</h4>
               <h5 class="teamRole">Software Developer &amp; Chief Tea Officer</h5>
             </div>
           </div>
@@ -155,19 +169,19 @@
             <div class="col-md-1"></div>
             <div class="col-sm-12 col-md-3">
               <img src="public/img/team/Echoo_HeadShot_Jeff.jpg" class="teamCircle" alt=""></img>
-              <h4 class="teamName">Jeff Huang</h4>
+              <h4 class="teamName">Jeff</h4>
               <h5 class="teamRole">Software Developer &amp; Chief Lunch Officer</h5>
             </div>
 
             <div class="col-sm-12 col-md-3">
               <img src="public/img/team/Echoo_HeadShot_Serena.jpg" class="teamCircle" alt=""></img>
-              <h4 class="teamName">Serena Leung</h4>
+              <h4 class="teamName">Serena</h4>
               <h5 class="teamRole">Software Developer and Interaction Designer &amp; Chief Icecream Officer</h5>
             </div>
 
             <div class="col-sm-12 col-md-3">
               <img src="public/img/team/Echoo_HeadShot_Elaine.jpg" class="teamCircle" alt=""></img>
-              <h4 class="teamName">Elaine Chang</h4>
+              <h4 class="teamName">Elaine</h4>
               <h5 class="teamRole">Marketing Manager &amp; Chief Food Officer</h5>
             </div>
             <div class="col-md-1"></div>
